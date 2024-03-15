@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /root
+
+hooks:
+  AfterInstall:
+    - location: scripts/docker-script.sh
+      timeout: 300
+      runas: root
+      command: ./docker-script.sh
