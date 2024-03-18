@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /root
+    destination: /opt/java-app
 
 hooks:
   AfterInstall:
