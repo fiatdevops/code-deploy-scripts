@@ -8,3 +8,4 @@ docker pull 406749516863.dkr.ecr.ap-south-1.amazonaws.com/fiatpe:latest
 
 # Start your containers using docker-compose
 docker-compose -f /root/docker-compose.yaml up -d
+docker image prune -f
