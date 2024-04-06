@@ -1,6 +1,6 @@
 #!/bin/bash
 MAX_ATTEMPTS=3
-CHECK_INTERVAL=20
+CHECK_INTERVAL=15
 BASE_URL="http://localhost:8000"  
 HEALTH_CHECK_ENDPOINT="/v1/api/health-check/"
 FAILED_ATTEMPTS=0
