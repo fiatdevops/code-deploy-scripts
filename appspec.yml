@@ -10,7 +10,7 @@ hooks:
       timeout: 300
       runas: root
       command: ./docker-script.sh
-ApplicationStart:
+  ApplicationStart:
     - location: ./check-health.sh
       timeout: 90
       runas: root
