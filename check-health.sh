@@ -15,7 +15,7 @@ while true; do
 
         if [ $FAILED_ATTEMPTS -ge $MAX_ATTEMPTS ]; then
             echo "Application is not healthy after multiple attempts. Reverting deployment..."
-            # ./revert-deployment.sh
+            bash docker-revert.sh
             exit 1
         fi
     else
