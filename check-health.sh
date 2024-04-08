@@ -20,5 +20,5 @@ done
 
 if [ $FAILED_ATTEMPTS -eq $MAX_ATTEMPTS ]; then
     echo "Application is not healthy after multiple attempts. Running revert script..."
-    bash /root/docker-revert.sh
+    bash /opt/docker-revert.sh
 fi
