@@ -20,5 +20,6 @@ done
 
 if [ $FAILED_ATTEMPTS -eq $MAX_ATTEMPTS ]; then
     echo "Application is not healthy after multiple attempts. Running revert script..."
+    aws sns publish --topic-arn "arn:aws:sns:ap-south-1:406749516863:Alert" --message "Application is not healthy after multiple attempts. Revert deployment"
     bash /opt/docker-revert.sh
 fi
